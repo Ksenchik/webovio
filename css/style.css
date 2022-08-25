@@ -109,10 +109,14 @@ body{
 }
 
 .clients{
-   display: block;
+   display: flex;
+   align-items: center;
    position: absolute;
+   height: 230px;
+   background-color: #fff;
+   box-shadow: -0.6em 2.4em 36px rgb(122 122 122 / 25%);
    right: 0;
-   margin-top: -8%;
+   margin-top: -130px;
    z-index: 2;
 }
 
@@ -121,8 +125,9 @@ body{
    background-color: #fff;
    display: flex;
    align-items: center;
-   padding: 4% 11vw 4% 4vw;
-   box-shadow: -0.6em 2.4em 36px rgb(122 122 122 / 25%);
+   padding-right: 11vw;
+   padding-left: 4vw;
+   
    justify-content: space-between;
 }
 
@@ -692,8 +697,14 @@ footer p{
    .header__list li{
       margin: 0 0 20px 0;
    }
+   .clients{
+      height: 140px;
+      margin-top: -70px;
+
+   }
    .clients-item{
-      padding: 4% 2vw 4% 2vw;
+      padding-right: 2vw;
+      padding-left: 2vw;
       width: 85vw;
    }
    .services{
@@ -731,7 +742,8 @@ footer p{
       line-height: 55px;
    }
    .clients{
-      margin-top: 10%;
+      height: 120px;      
+      margin-top: -60px;
    }
    .clients-item{
       width: 90vw;
@@ -789,6 +801,9 @@ footer p{
       font-size: 20px;
       line-height: 25px;
    }
+   .make{
+      margin-top: -116px;
+   }
    .make h2{
       font-size: 28px;
       line-height: 37px;
@@ -799,6 +814,13 @@ footer p{
    }
    .footer-logo{
       flex-direction: column; 
+   }
+}
+
+@media (max-width: 350px){
+   .project-info-text{
+      width: 280px;
+    height: 160px;
    }
 }
 
