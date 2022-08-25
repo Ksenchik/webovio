@@ -1,12 +1,15 @@
 // burger
-let header__burger = document.querySelectorAll('.header__burger,.header__link');
-let header_menu = document.querySelector('.header__menu');
-let back = document.querySelector('body');
+const menuButton = document.querySelector(".header__burger");
+const menuButton1 = document.querySelector(".header__menu");
+const contentBody = document.querySelector("body");
 
-header__burger.forEach(function (item) {
-   item.onclick = function () {
-      item.classList.toggle('active');
-      header_menu.classList.toggle('active');
-      back.classList.toggle('lock');
-   }
-});
+menuButton.onclick = function () {
+  menuButton.classList.toggle("active");
+  menuButton1.classList.toggle("active");
+  contentBody.classList.toggle("lock");
+}
+  menuButton1.onclick = function () {
+   menuButton.classList.remove("active");
+   menuButton1.classList.remove("active");
+   contentBody.classList.remove("lock");
+}
